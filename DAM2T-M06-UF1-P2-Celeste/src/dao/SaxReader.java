@@ -29,7 +29,7 @@ public class SaxReader extends DefaultHandler {
 		SAXParserFactory factory = SAXParserFactory.newInstance();
 		try {
 			parser = factory.newSAXParser();
-			file = new File ("files/entrada.xml");
+			file = new File (url);
 		} catch (ParserConfigurationException | SAXException e) {
 			System.out.println("ERROR creating the parser");
 		}
